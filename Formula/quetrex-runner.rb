@@ -6,16 +6,16 @@ class QuetrexRunner < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/barnent1/quetrex-cloud/releases/download/runner-v0.1.0/quetrex-runner-darwin-arm64"
+      url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.1.0/quetrex-runner-darwin-arm64"
       sha256 "76cea0b4fdeb1b420f7319482a934b9ff5e3d7890b71e281fe7f33fffe5b7481"
     else
-      url "https://github.com/barnent1/quetrex-cloud/releases/download/runner-v0.1.0/quetrex-runner-darwin-arm64"
+      url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.1.0/quetrex-runner-darwin-arm64"
       sha256 "76cea0b4fdeb1b420f7319482a934b9ff5e3d7890b71e281fe7f33fffe5b7481"
     end
   end
 
   on_linux do
-    url "https://github.com/barnent1/quetrex-cloud/releases/download/runner-v0.1.0/quetrex-runner-linux-x64"
+    url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.1.0/quetrex-runner-linux-x64"
     sha256 "c2c82d1df4b1df33c3f781d63d3cdf449120fc5c8cb87cb9a7adef1b1928a15e"
   end
 
