@@ -31,4 +31,15 @@ class QuetrexRunner < Formula
   test do
     assert_match "quetrex-runner", shell_output("#{bin}/quetrex-runner --help 2>&1", 0)
   end
+
+  # Expose the runner to `brew services` so upgrades can be restarted via
+  # `brew services restart quetrex-runner` instead of manual launchctl calls.
+  # The runner reads QUETREX_CLOUD_URL and QUETREX_RUNNER_TOKEN from
+  # ~/.quetrex-runner/config.json — written by `quetrex-runner connect`.
+  service do
+    run [opt_bin/"quetrex-runner"]
+    keep_alive true
+    log_path var/"log/quetrex-runner.log"
+    error_log_path var/"log/quetrex-runner.error.log"
+  end
 end
