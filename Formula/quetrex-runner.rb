@@ -1,23 +1,23 @@
 class QuetrexRunner < Formula
   desc "Quetrex Cloud runner — executes AI agents on your machine"
   homepage "https://quetrex.com"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.5.0/quetrex-runner-darwin-arm64"
-      sha256 "f5db99d4e421a773cea51b6ba4ddb540d14234eee1b0df830cdeda36ab084fb3"
+      url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.5.1/quetrex-runner-darwin-arm64"
+      sha256 "cb519713374ab410481e0b5718e0864a2f5f783e3b0257403d35401ae6a80996"
     else
       # Intel Mac — use ARM binary under Rosetta until native Intel build ships
-      url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.5.0/quetrex-runner-darwin-arm64"
-      sha256 "f5db99d4e421a773cea51b6ba4ddb540d14234eee1b0df830cdeda36ab084fb3"
+      url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.5.1/quetrex-runner-darwin-arm64"
+      sha256 "cb519713374ab410481e0b5718e0864a2f5f783e3b0257403d35401ae6a80996"
     end
   end
 
   on_linux do
-    url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.5.0/quetrex-runner-linux-x64"
-    sha256 "b091f6303539d8ac7586834f092b4abcf4f997338cf8e85297282f80041d9029"
+    url "https://github.com/Barnhardt-Enterprises-Inc/homebrew-tap/releases/download/runner-v0.5.1/quetrex-runner-linux-x64"
+    sha256 "d4e12d96bfad2da006d8240177b9a47ad68748f17a411fa23637088717c71de6"
   end
 
   def install
